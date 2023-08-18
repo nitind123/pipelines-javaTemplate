@@ -13,7 +13,7 @@ pipelines:
           - echo "Executing Post Run"
           - set_run_name "v$run_number.0"
     configuration:
-      nodePool: default-dynamic-nodepool
+      nodePool: dynamic
       jfrogCliVersion: 2
     steps:
       - name: sample_step
