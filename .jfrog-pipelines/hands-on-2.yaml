@@ -10,7 +10,7 @@ pipelines:
         type: MvnBuild
         configuration:
           integrations:
-            - name: artifactory #{{ .jfrog-pipelines.localArtifactory }}
+            - name: artifactory
           inputResources:
             - name: src_repo_{{ .Values.var.project }}
           outputResources:
@@ -22,6 +22,7 @@ pipelines:
         execution:
           onSuccess:
             - curl -fL https://install-cli.jfrog.io | sh
+            - echo {{ .jfrog-pipelines.localArtifactory }}
             - jf --version
             - task: jfrog/docker-build@v0.0.1
               input:
