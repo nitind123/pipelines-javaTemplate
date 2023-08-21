@@ -1,5 +1,0 @@
-var:
-  project: devnext_workshop_1
-  gitProvider: kunal_gh
-  path: kunal-mazumdar/pipelines-devnext
-  jfrogPlatformInstance: devnextsaas1.jfrog.io
