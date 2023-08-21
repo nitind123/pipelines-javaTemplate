@@ -29,10 +29,10 @@ inputs:
   sourceRepository:
     # Support all the Git Resource configuration properties
     # Ref: https://jfrog.com/help/r/jfrog-pipelines-documentation/gitrepo
-    path: nitind123/newTemplates
+    path: nitind123/pipelines-javaTemplate
     gitProvider: s_gitHub
     branches:
-      include: JavaTemplate
+      include: main
 
   # [Required]
   integrations:
@@ -47,7 +47,7 @@ configurations:
   buildTool: 'maven'
 
   # [Optional] Defaults to repository root folder
-  sourceFolder: 'yaml/javaTem'
+  sourceFolder: 'yaml/java'
 
 
   # [Optional] When buildTool = Maven/Gradle
