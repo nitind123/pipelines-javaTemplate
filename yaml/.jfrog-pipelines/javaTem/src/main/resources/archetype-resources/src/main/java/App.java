@@ -1,10 +1,10 @@
-package com.jfrogpipe.demo;
+package $org.example;
 
 /**
  * Hello world!
  *
  */
-public class DemoApp 
+public class App 
 {
     public static void main( String[] args )
     {
